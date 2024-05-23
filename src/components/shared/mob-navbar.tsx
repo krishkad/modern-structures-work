@@ -18,19 +18,21 @@ export default function MobNavbar() {
             <SheetTrigger asChild>
                 <AlignRight />
             </SheetTrigger>
-            <SheetContent onOpenAutoFocus={(e)=> e.preventDefault()}>
+            <SheetContent onOpenAutoFocus={(e) => e.preventDefault()}>
                 <SheetHeader>
                     <SheetTitle>
-                        <Logo />
+                        <Logo imgsrc="LOGO-01.jpg" />
                     </SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col gap-5 py-4 my-5">
                     {navLinks.map((item, i) => {
                         return (
-                            <Link href={'/'} key={i} className="w-full font-semibold flex items-center gap-4">
-                                {item.label === 'HOME' ? <HomeIcon className="w-[20px] h-[20px]" /> : item.label === 'ABOUT US' ? <User className="w-[20px] h-[20px]" /> : item.label === 'PROJECTS' ? <FolderKanban className="w-[20px] h-[20px]" /> : item.label === 'SERVICES' ? <Building className="w-[20px] h-[20px]" /> : item.label === 'CONTACT' ? <Contact className="w-[20px] h-[20px]" /> : 'none'}
-                                {item.label}
-                            </Link>
+                            <SheetClose asChild key={i}>
+                                <Link href={item.href} className="w-full font-semibold flex items-center gap-4">
+                                    {item.label === 'HOME' ? <HomeIcon className="w-[20px] h-[20px]" /> : item.label === 'ABOUT US' ? <User className="w-[20px] h-[20px]" /> : item.label === 'PROJECTS' ? <FolderKanban className="w-[20px] h-[20px]" /> : item.label === 'SERVICES' ? <Building className="w-[20px] h-[20px]" /> : item.label === 'CONTACT' ? <Contact className="w-[20px] h-[20px]" /> : 'none'}
+                                    {item.label}
+                                </Link>
+                            </SheetClose>
                         )
                     })}
                 </div>

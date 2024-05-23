@@ -7,7 +7,7 @@ import { PiPhoneDisconnectFill } from "react-icons/pi";
 
 const Contact = () => {
     return (
-        <div className='w-full'>
+        <div className='w-full' id='contact'>
             <div className="max-w-wrapper max-w-5xl mx-auto py-10">
                 <div className="w-full">
                     <h2 className="text-center text-2xl font-bold"><span className="text-blue-500">CONTACT </span>US</h2>
@@ -22,7 +22,7 @@ const Contact = () => {
                             <Input className='max-w-[320px]' placeholder='Enter E-mail' />
                             <Input className='max-w-[320px]' placeholder='Enter Phone No.' />
                             <Textarea className='max-w-[320px] h-40' placeholder='Enter Message' />
-                            <Button className='w-full max-w-[320px]'>Submit</Button>
+                            <Button className='w-full max-w-[320px] bg-zinc-800 '>Submit</Button>
                         </div>
                     </div>
                     <div className="w-full sm:w-3/5">
@@ -46,10 +46,10 @@ const Contact = () => {
                                 </div>
                                 <div className="w-[calc(100%-20px)]">
                                     <p className="text-sm font-medium">
-                                       333 333 3333
+                                        333 333 3333
                                     </p>
                                     <p className="text-sm font-medium">
-                                       333 333 3333
+                                        333 333 3333
                                     </p>
                                 </div>
                             </div>
@@ -59,7 +59,7 @@ const Contact = () => {
                                 </div>
                                 <div className="w-[calc(100%-20px)]">
                                     <p className="text-sm font-medium">
-                                       Info@modernstructures.com
+                                        Info@modernstructures.com
                                     </p>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@ const Contact = () => {
                                 </div>
                                 <div className="w-[calc(100%-20px)]">
                                     <p className="text-sm font-medium">
-                                        Mon - Sat: 9:00 - 18:00 
+                                        Mon - Sat: 9:00 - 18:00
                                     </p>
                                 </div>
                             </div>

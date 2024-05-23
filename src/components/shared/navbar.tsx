@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className='w-full'>
             <div className="max-w-wrapper h-20  flex items-center">
                 <div className="w-full flex justify-between items-center">
-                    <Logo />
+                    <Logo imgsrc='LOGO-01.jpg' />
                     <div className="hidden sm:flex items-center gap-6">
                         <Search className='w-4 h-4 cursor-pointer' />
                         {navLinks.map((item, i) => {

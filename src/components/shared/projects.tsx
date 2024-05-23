@@ -6,7 +6,7 @@ import React from 'react'
 
 const Projects = () => {
     return (
-        <div className='w-full'>
+        <div className='w-full' id='projects'>
             <div className="max-w-wrapper max-w-5xl mx-auto py-10">
                 <div className="w-full flex flex-col gap-7">
                     <div className="w-full text-center">
