@@ -8,7 +8,7 @@ import { PiPhoneDisconnectFill } from "react-icons/pi";
 const Contact = () => {
     return (
         <div className='w-full' id='contact'>
-            <div className="max-w-wrapper max-w-5xl mx-auto py-10">
+            <div className="max-w-wrapper max-w-5xl mx-auto py-24">
                 <div className="w-full">
                     <h2 className="text-center text-2xl font-bold"><span className="text-blue-500">CONTACT </span>US</h2>
                 </div>
@@ -22,7 +22,7 @@ const Contact = () => {
                             <Input className='max-w-[320px]' placeholder='Enter E-mail' />
                             <Input className='max-w-[320px]' placeholder='Enter Phone No.' />
                             <Textarea className='max-w-[320px] h-40' placeholder='Enter Message' />
-                            <Button className='w-full max-w-[320px] bg-zinc-800 '>Submit</Button>
+                            <Button className='w-full max-w-[320px] bg-zinc-700 hover:bg-zinc-800'>Submit</Button>
                         </div>
                     </div>
                     <div className="w-full sm:w-3/5">
