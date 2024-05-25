@@ -22,7 +22,8 @@ export function HeroCarousel() {
             }}
             plugins={[
                 Autoplay({
-                    delay: 4000,
+                    delay: 2000,
+                    Infinity: true
                 })
             ]}
         >
