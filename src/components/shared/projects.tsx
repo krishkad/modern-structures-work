@@ -49,7 +49,7 @@ const Projects = () => {
                                 <div className="w-full h-40 relative group bg-black">
                                     <Image src={'/affordable-housing/4.png'} width={500} height={500} className="w-full h-full object-fill" priority sizes="(max-width: 768px) 100vw, 33vw" alt='img' />
                                     <div className="absolute transition-all duration-500 opacity-0 group-hover:opacity-100 bg-blue-400/80 size-full inset-0 flex flex-col justify-center items-center gap-2 cursor-pointer">
-                                        <p className="text-md text-white">AFFORDABLE HOUSING</p>
+                                        <p className="text-md text-white text-center">AFFORDABLE HOUSING</p>
                                         <Search className='text-white w-5 h-5' />
 
                                     </div>
