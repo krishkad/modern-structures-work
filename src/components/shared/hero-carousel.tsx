@@ -15,7 +15,7 @@ import Autoplay from 'embla-carousel-autoplay'
 
 export function HeroCarousel() {
     return (
-        <Carousel className="size-full relative"
+        <Carousel className="size-full relative pointer-events-none"
             opts={{
                 align: "start",
                 loop: true,
@@ -24,15 +24,16 @@ export function HeroCarousel() {
                 Autoplay({
                     delay: 2000,
                     Infinity: true
+                    
                 })
             ]}
         >
-            <CarouselContent>
+            <CarouselContent className="pointer-events-none">
                 {carouselImg.map((item, index) => (
-                    <CarouselItem key={index}>
-                        <div className="p-0">
-                            <div className="relative bg-white w-full h-[calc(100svh-80px)]">
-                                <Image src={item.img} width={500} height={500} className="w-full h-full object-fill" priority sizes="(max-width: 768px) 100vw, 33vw" alt="img" />
+                    <CarouselItem key={index} className="pointer-events-none">
+                        <div className="p-0 pointer-events-none">
+                            <div className="relative pointer-events-none bg-white w-full h-[calc(100svh-80px)]">
+                                <Image src={item.img} width={500} height={500} className="w-full h-full object-fill pointer-events-none" priority sizes="(max-width: 768px) 100vw, 33vw" alt="img" />
                             </div>
                         </div>
                     </CarouselItem>
