@@ -15,32 +15,38 @@ import Autoplay from 'embla-carousel-autoplay'
 
 export function HeroCarousel() {
     return (
-        <Carousel className="size-full relative pointer-events-none"
-            opts={{
-                align: "start",
-                loop: true,
-            }}
-            plugins={[
-                Autoplay({
-                    delay: 2000,
-                    Infinity: true
-                    
-                })
-            ]}
-        >
-            <CarouselContent className="pointer-events-none">
-                {carouselImg.map((item, index) => (
-                    <CarouselItem key={index} className="pointer-events-none">
-                        <div className="p-0 pointer-events-none">
-                            <div className="relative pointer-events-none bg-white w-full h-[calc(100svh-80px)]">
-                                <Image src={item.img} width={500} height={500} className="w-full h-full object-fill pointer-events-none" priority sizes="(max-width: 768px) 100vw, 33vw" alt="img" />
+        <>
+            <Carousel className="size-full"
+                opts={{
+                    align: "start",
+                    loop: true,
+                }}
+                plugins={[
+                    Autoplay({
+                        delay: 2000,
+                        Infinity: true,
+                        stopOnFocusIn: false,
+                        stopOnInteraction: false,
+                        stopOnMouseEnter: false,
+
+
+                    })
+                ]}
+            >
+                <CarouselContent className="pointer-events-none">
+                    {carouselImg.map((item, index) => (
+                        <CarouselItem key={index} className="pointer-events-none">
+                            <div className="p-0 pointer-events-none">
+                                <div className="relative pointer-events-none bg-white w-full h-[calc(100svh-80px)]">
+                                    <Image src={item.img} width={500} height={500} className="w-full h-full object-fill pointer-events-none" priority sizes="(max-width: 768px) 100vw, 33vw" alt="img" />
+                                </div>
                             </div>
-                        </div>
-                    </CarouselItem>
-                ))}
-            </CarouselContent>
-            <CarouselPrevious className="left-2" />
-            <CarouselNext className="right-2" />
-        </Carousel>
+                        </CarouselItem>
+                    ))}
+                </CarouselContent>
+                <CarouselNext className="right-2 cursor-pointer" />
+                <CarouselPrevious className="left-2 cursor-pointer" />
+            </Carousel>
+        </>
     )
 }
