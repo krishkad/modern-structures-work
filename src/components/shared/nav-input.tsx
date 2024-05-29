@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/popover"
 import { projectContent } from '@/constant/constant';
 import Link from 'next/link';
+import { SheetClose } from '../ui/sheet';
 
 
 interface Project {
@@ -29,7 +30,7 @@ interface Project {
     }[];
 }
 
-const NavInput = () => {
+const NavInput = ({ isNav }: { isNav?: boolean }) => {
     const [search, setSearch] = useState("");
     const [suggestion, setSuggestion] = useState<Project[]>([]);
     const [showSuggestion, setShowSuggestion] = useState(false);
@@ -41,7 +42,7 @@ const NavInput = () => {
 
 
     useEffect(() => {
-        const sugg = projectContent.filter((project) => project.title.includes(search));
+        const sugg = projectContent.filter((project) => project.title.startsWith(search));
         setSuggestion(sugg);
         if (suggestion.length > 0) {
 
@@ -61,19 +62,31 @@ const NavInput = () => {
                 onChange={handleOnChange}
                 name='search'
                 placeholder='Search here...'
-                className='pl-10 w-[250px]'
+                className={`pl-10 w-[250px] ${isNav && 'pl-3'}`}
                 autoComplete="off"
             />
             {search.length > 0 && <div className="absolute top-[120%] border inset-x-0 w-[250px] bg-white p-1 rounded-md flex flex-col gap-2">
                 {suggestion.map((sugges, i) => {
+                    return (
 
-                    return <div className="w-full hover:bg-slate-200 p-2" key={i}>
-                        <Link href={`/${sugges.path}`} className='flex flex-col gap-1'>
-                            <span className="font-semibold text-md">{sugges.title}</span>
-                            <span className="font-semibold text-xs text-zinc-400">{sugges.content1.text.slice(0, 50)}...</span>
-                            <div className='w-full h-[1px] bg-zinc-200' />
-                        </Link>
-                    </div>
+                        <div className="w-full hover:bg-slate-100 p-2" key={i}>
+                            {isNav ?
+                                <SheetClose asChild>
+                                    <Link href={`/${sugges.path}`} className='flex flex-col gap-1'>
+                                        <span className="font-semibold text-md">{sugges.title}</span>
+                                        <span className="font-semibold text-xs text-zinc-400">{sugges.content1.text.slice(0, 50)}...</span>
+                                        <div className='w-full h-[1px] bg-zinc-200' />
+                                    </Link>
+                                </SheetClose>
+                                : <Link href={`/${sugges.path}`} className='flex flex-col gap-1'>
+                                    <span className="font-semibold text-md">{sugges.title}</span>
+                                    <span className="font-semibold text-xs text-zinc-400">{sugges.content1.text.slice(0, 50)}...</span>
+                                    <div className='w-full h-[1px] bg-zinc-200' />
+                                </Link>
+                            }
+                        </div>
+
+                    )
                 })}
             </div>}
         </div >

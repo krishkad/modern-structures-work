@@ -11,6 +11,7 @@ import { navLinks } from "@/constant/constant"
 import Link from "next/link"
 import { AlignRight, Building, Contact, FolderKanban, Home as HomeIcon, User } from 'lucide-react';
 import Logo from "./logo";
+import NavInput from "./nav-input";
 
 export default function MobNavbar() {
     return (
@@ -25,6 +26,7 @@ export default function MobNavbar() {
                     </SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col gap-5 py-4 my-5">
+                    <NavInput isNav={true} />
                     {navLinks.map((item, i) => {
                         return (
                             <SheetClose asChild key={i}>
