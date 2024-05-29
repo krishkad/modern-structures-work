@@ -28,8 +28,6 @@ export function HeroCarousel() {
                         stopOnFocusIn: false,
                         stopOnInteraction: false,
                         stopOnMouseEnter: false,
-
-
                     })
                 ]}
             >

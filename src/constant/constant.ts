@@ -66,11 +66,11 @@ export const projectContent = [
         title: "AFFORDABLE HOUSING",
         content1: {
             img: "/affordable-housing/1.png",
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat delectus provident enim maiores voluptatibus totam veniam doloribus repellendus beatae labore autem minus sit, perspiciatis facilis rerum dicta quam ipsa a illum sunt cumque deserunt."
+            text: "Modern Structure has proposed a residential housing development project to be constructed in Kampala, Uganda with a total of 164 units."
         },
         content2: {
             img: "/affordable-housing/4.png",
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat delectus provident enim maiores voluptatibus totam veniam doloribus repellendus beatae labore autem minus sit, perspiciatis facilis rerum dicta quam ipsa a illum sunt cumque deserunt."
+            text: "This proposed project will be built on a plot size of 2 acres with a total constructed area of 8500 square metres. Modern Structure will be responsible for the design and consultation parts of this project."
         },
         imgs: [
             {
