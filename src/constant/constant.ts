@@ -3,19 +3,23 @@
 export const navLinks = [
     {
         label: "HOME",
-        href: "/"
+        href: "/#home"
     },
     {
         label: "ABOUT US",
-        href: "#aboutus"
+        href: "/#aboutus"
     },
     {
         label: "PROJECTS",
-        href: "#projects"
+        href: "/#projects"
+    },
+    {
+        label: "SERVICES",
+        href: "/services"
     },
     {
         label: "CONTACT",
-        href: "#contact"
+        href: "/#contact"
     },
 ];
 
@@ -195,6 +199,131 @@ export const projectContent = [
             {
                 path: "/IMPALA-GARDENS/ImpalaDreamsGatakaDrone17thsept3.jpg",
             },
+        ]
+    },
+]
+
+
+
+export const imgesArray = [
+    {
+        path: 'affordable-housing',
+        images: [
+            {
+                path: "/affordable-housing/2.png"
+            },
+            {
+                path: "/affordable-housing/3.png"
+            },
+            {
+                path: "/affordable-housing/5.png"
+            },
+            {
+                path: "/affordable-housing/6.png"
+            },
+            {
+                path: "/affordable-housing/bhk1.jpg"
+            },
+            {
+                path: "/affordable-housing/1.png",
+            },
+            {
+                path: "/affordable-housing/4.png",
+            }
+
+        ]
+    },
+    {
+        path: 'impala-dreams',
+        images: [
+            {
+                path: "/IMPALA-DREAMS/8.jpg",
+            },
+            {
+                path: "/IMPALA-DREAMS/final-1-ps.jpg",
+            },
+            {
+                path: "/IMPALA-DREAMS/1.jpg",
+            }
+
+        ]
+    },
+    {
+        path: 'burhani-masjid',
+        images: [
+            {
+                path: "/BURHANI-MASJID/masjid-edited.jpg",
+            },
+            {
+                path: "/BURHANI-MASJID/3.jpg",
+            },
+            {
+                path: "/BURHANI-MASJID/1.jpg",
+            },
+            {
+                path: "/BURHANI-MASJID/2.jpg",
+            }
+
+        ]
+    },
+    {
+        path: 'modern-heights',
+        images: [
+            {
+                path: "/affordable-housing/3.png",
+            },
+            {
+                path: "/affordable-housing/2.png",
+            },
+            {
+                path: "/affordable-housing/1.png",
+            },
+
+        ]
+    },
+    {
+        path: 'pearl-homes',
+        images: [
+            {
+                path: "/PEARL-HOMES/DJI_0020-min.png",
+            },
+            {
+                path: "/PEARL-HOMES/PRL-56.jpg",
+            },
+            {
+                path: "/PEARL-HOMES/PRL-15.jpg",
+            },
+
+        ]
+    },
+    {
+        path: 'impala-gardens',
+        images: [
+            {
+                path: "/IMPALA-GARDENS/1.jpg",
+            },
+            {
+                path: "/IMPALA-GARDENS/5.jpg",
+            },
+            {
+                path: "/IMPALA-GARDENS/3.jpg",
+            },
+            {
+                path: "/IMPALA-GARDENS/6.jpg",
+            },
+            {
+                path: "/IMPALA-GARDENS/7.jpg",
+            },
+            {
+                path: "/IMPALA-GARDENS/ImpalaDreamsGatakaDrone17thsept3.jpg",
+            },
+            {
+                path: "/IMPALA-GARDENS/2.jpg",
+            },
+            {
+                path: "/IMPALA-GARDENS/4.jpg",
+            },
+
         ]
     },
 ]

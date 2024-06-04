@@ -13,7 +13,7 @@ const Projects = () => {
                     <div className="w-full text-center">
                         <h2 className="text-2xl font-bold">OUR <span className="text-blue-500">PROJECTS</span></h2>
                     </div>
-                    <div className="w-full flex max-sm:flex-col gap-5">
+                    <div className="w-full flex justify-center gap-5">
                         <div className="w-full sm:w-3/4 grid grid-cols-2 sm:grid-cols-3 gap-4  p-2">
                             <Link href={'/modern-heights'}>
                                 <div className="w-full h-40 relative group">
@@ -76,13 +76,13 @@ const Projects = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="w-full sm:w-1/4">
+                        {/* <div className="w-full sm:w-1/4">
                             <div className="w-full flex flex-col gap-4 text-center py-2 ">
                                 {projectLink.map((item, i) => {
                                     return <p className={cn("text-xl font-bold hover:text-blue-500 hover:underline cursor-pointer text-muted-foreground", i === 0 && "text-blue-500 underline")} key={i}>{item.label}</p>
                                 })}
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>

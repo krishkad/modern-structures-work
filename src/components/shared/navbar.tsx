@@ -31,7 +31,7 @@ const Navbar = () => {
 
     return (
         <div className='w-full sticky top-0 z-30 bg-white'>
-            <div className="max-w-wrapper h-20 flex items-center">
+            <div className="px-2 sm:px-8 h-20 flex items-center">
                 <div className="w-full flex justify-between items-center">
                     <Logo imgsrc='LOGO-01.jpg' />
                     <div className="hidden sm:flex items-center gap-6">
