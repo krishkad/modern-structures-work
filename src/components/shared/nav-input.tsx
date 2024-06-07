@@ -54,8 +54,7 @@ const NavInput = ({ isNav }: { isNav?: boolean }) => {
     }, [search]);
 
 
-    console.log(suggestion);
-    console.log(suggestion.length > 0);
+
     return (
         <div className='relative'>
             <Input
