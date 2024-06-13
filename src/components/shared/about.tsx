@@ -15,13 +15,13 @@ const About = () => {
                     <div className="w-full pt-5">
                         <div className="w-full flex max-md:flex-col max-sm:gap-5 items-center gap-5">
                             <div className="w-full md:w-1/2 lg:w-3/5 space-y-5">
-                                <p className="font-medium text-zinc-800">
+                                <p className="text-justify font-medium text-zinc-800">
                                     Formed in 2015, Modern Structure International (U) Lad undertakes residential and civil infrastructure projects in Uganda and Kenya. A need for quality construction services in the real estate sector in the country of of Uganda. where Modern Structure has anoffice, was identified. Confident with the expertise gained building projects abroad, Modern Structure hopes to overcome this deficit.
                                 </p>
-                                <p className="font-medium text-zinc-800">
+                                <p className="text-justify font-medium text-zinc-800">
                                     Modern Structure aims to provide services for the construction of lasting, reliable and consistently sturdy properties. To ensure that the best results are obtained, innovative approaches are encouraged while ensuring that the perspectives considered remain grounded by realistic constraints. All of this is done strictly within the scope provided by the costs to the project
                                 </p>
-                                <p className="font-medium text-zinc-800">
+                                <p className="text-justify font-medium text-zinc-800">
                                     To better facilitate the development of the local economy, Modern Structure hires its workforce from the local populace, trains them and helps them deliver quality work. This harmony with local labourers has helped Modem Structure tremendously in implementing projects in both a cost-effective and time-efficient manner. In a short duration, Modern Structure has proved that quality work is achievable through the thoughtful application of precision, competence and dedicated teamwork.
                                 </p>
                             </div>
