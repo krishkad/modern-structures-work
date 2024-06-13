@@ -78,6 +78,12 @@ export const projectContent = [
         },
         imgs: [
             {
+                path: "/affordable-housing/1.png",
+            },
+            {
+                path: "/affordable-housing/4.png",
+            },
+            {
                 path: "/affordable-housing/2.png"
             },
             {
@@ -108,6 +114,12 @@ export const projectContent = [
         },
         imgs: [
             {
+                path: "/IMPALA-DREAMS/final-1-ps.jpg",
+            },
+            {
+                path: "/IMPALA-DREAMS/1.jpg",
+            },
+            {
                 path: "/IMPALA-DREAMS/8.jpg",
             },
 
@@ -125,6 +137,12 @@ export const projectContent = [
             text: "This property was constructed by Modern Structure on a plot of 1.5 acres with a total constructed area of 4500 square meters."
         },
         imgs: [
+            {
+                path: "/BURHANI-MASJID/1.jpg",
+            },
+            {
+                path: "/BURHANI-MASJID/2.jpg",
+            },
             {
                 path: "/BURHANI-MASJID/masjid-edited.jpg",
             },
@@ -146,6 +164,12 @@ export const projectContent = [
         },
         imgs: [
             {
+                path: "/affordable-housing/1.png",
+            },
+            {
+                path: "/affordable-housing/2.png",
+            },
+            {
                 path: "/affordable-housing/3.png",
             },
 
@@ -164,6 +188,12 @@ export const projectContent = [
         },
         imgs: [
             {
+                path: "/PEARL-HOMES/PRL-56.jpg",
+            },
+            {
+                path: "/PEARL-HOMES/PRL-15.jpg",
+            },
+            {
                 path: "/PEARL-HOMES/DJI_0020-min.png",
             },
 
@@ -181,6 +211,12 @@ export const projectContent = [
             text: "Each unit is duplex, with the main bedrooms on the upper floor; The Master Bedroom has a dedicated balcony area, and the project has common amenities such as a children's play area, gym, swimming pool and grocery store.Impala Gardens was built on a plot size of 5 acres with a total constructed area of 16000 square metres. Modern Structure was responsible for the design and consultation parts of this project."
         },
         imgs: [
+            {
+                path: "/IMPALA-GARDENS/2.jpg",
+            },
+            {
+                path: "/IMPALA-GARDENS/4.jpg",
+            },
             {
                 path: "/IMPALA-GARDENS/1.jpg",
             },

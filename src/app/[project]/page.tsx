@@ -27,25 +27,25 @@ const ProjectPage = ({ params }: { params: { project: string } }) => {
                                     <div className="w-full py-10" >
                                         <h1 className="text-center text-3xl font-bold text-blue-500">{project.title}</h1>
                                     </div>
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:items-center">
-                                        <div className="w-full h-64">
+                                    <div className="max-w-5xl mx-auto">
+                                        {/* <div className="w-full h-64">
                                             <div className="relative w-full h-full sm:px-14">
                                                 <Image src={project.content1.img} priority width={370} height={270} sizes='height:100%,width:100%' className='w-full h-full aspect-video rounded-2xl cursor-pointer' alt='img' onClick={() => onHandleChange(project.content1.img)} />
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div className="w-full">
-                                            <p className="sm:text-center font-medium">{project.content1.text}</p>
+                                            <p className=" text-justify font-medium">{project.content1.text}</p>
                                         </div>
                                     </div>
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 py-16 sm:items-center">
+                                    <div className="max-w-5xl mx-auto">
                                         <div className="w-full max-sm:order-last">
-                                            <p className="sm:text-center font-medium">{project.content2.text}</p>
+                                            <p className=" text-justify font-medium">{project.content2.text}</p>
                                         </div>
-                                        <div className="w-full h-64">
+                                        {/* <div className="w-full h-64">
                                             <div className="relative w-full h-full sm:px-14">
                                                 <Image src={project.content2.img} priority width={370} height={270} sizes='height:100%,width:100%' className='w-full h-full aspect-video rounded-2xl cursor-pointer' alt='img' onClick={() => onHandleChange(project.content2.img)} />
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="w-full my-10">
                                         <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-8">
