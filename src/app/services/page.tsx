@@ -24,7 +24,7 @@ const ServicePage = () => {
                         </div>
                         <div className="w-full grid-row-2 grid md:grid-cols-2  gap-5 sm:gap-10">
                             <div className="relative w-full h-[250px]">
-                                <Image src={"/affordable-housing/1.png"} fill sizes='width:100%,height:100%' className='object-cover rounded-md' alt='img' />
+                                <Image src={"/affordable-housing/2.png"} fill sizes='width:100%,height:100%' className='object-cover rounded-md' alt='img' />
                             </div>
                             <div className="w-full space-y-2">
                                 <h2 className="text-2xl font-bold text-blue-500">Construction</h2>
@@ -33,7 +33,7 @@ const ServicePage = () => {
                         </div>
                         <div className="w-full grid-row-2 grid md:grid-cols-2  gap-5 sm:gap-10">
                             <div className="relative w-full h-[250px]">
-                                <Image src={"/affordable-housing/1.png"} fill sizes='width:100%,height:100%' className='object-cover rounded-md' alt='img' />
+                                <Image src={"/affordable-housing/3.png"} fill sizes='width:100%,height:100%' className='object-cover rounded-md' alt='img' />
                             </div>
                             <div className="w-full space-y-2">
                                 <h2 className="text-2xl font-bold text-blue-500">Real <span className="text-primary">Estate</span></h2>
@@ -42,7 +42,7 @@ const ServicePage = () => {
                         </div>
                         <div className="w-full grid-row-2 grid md:grid-cols-2  gap-5 sm:gap-10">
                             <div className="relative w-full h-[250px]">
-                                <Image src={"/affordable-housing/1.png"} fill sizes='width:100%,height:100%' className='object-cover rounded-md' alt='img' />
+                                <Image src={"/affordable-housing/4.png"} fill sizes='width:100%,height:100%' className='object-cover rounded-md' alt='img' />
                             </div>
                             <div className="w-full space-y-2">
                                 <h2 className="text-2xl font-bold text-blue-500">Design <span className="text-primary">and Build</span></h2>
