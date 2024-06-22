@@ -36,7 +36,7 @@ const Contact = () => {
                                 </div>
                                 <div className="w-[calc(100%-20px)]">
                                     <p className="text-sm font-medium">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ex quo dignissimos repellat ea voluptatum, amet, qui laboriosam provident, aspernatur quis dolor vero.
+                                        1F-22, Jenna Plaza, Nkrumah Road, Kamapla, Uganda
                                     </p>
                                 </div>
                             </div>
@@ -46,10 +46,10 @@ const Contact = () => {
                                 </div>
                                 <div className="w-[calc(100%-20px)]">
                                     <p className="text-sm font-medium">
-                                        333 333 3333
+                                        +256 752 778653
                                     </p>
                                     <p className="text-sm font-medium">
-                                        333 333 3333
+                                        +256 744 778651
                                     </p>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@ const Contact = () => {
                                 </div>
                                 <div className="w-[calc(100%-20px)]">
                                     <p className="text-sm font-medium">
-                                        {121} 8888 9999
+                                        +256 744 778651
                                     </p>
                                 </div>
                             </div>
