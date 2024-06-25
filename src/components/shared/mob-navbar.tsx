@@ -7,13 +7,34 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
-import { navLinks } from "@/constant/constant"
 import Link from "next/link"
 import { AlignRight, Building, Contact, FolderKanban, Home as HomeIcon, User } from 'lucide-react';
 import Logo from "./logo";
 import NavInput from "./nav-input";
 
 export default function MobNavbar() {
+    const navLinks = [
+        {
+            label: "HOME",
+            href: "/#home"
+        },
+        {
+            label: "ABOUT US",
+            href: "/#aboutus"
+        },
+        {
+            label: "PROJECTS",
+            href: "/#projects"
+        },
+        {
+            label: "SERVICES",
+            href: "/services"
+        },
+        {
+            label: "CONTACT",
+            href: "/#contact"
+        },
+    ];
     return (
         <Sheet>
             <SheetTrigger asChild>

@@ -1,9 +1,10 @@
+"use client";
 import Navbar from '@/components/shared/navbar'
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const ServicePage = () => {
+
     return (
         <div className='w-full'>
             <Navbar />
@@ -15,7 +16,7 @@ const ServicePage = () => {
                     <div className="max-w-wrapper md:max-w-5xl mx-auto space-y-12 pt-8 pb-12">
                         <div className="w-full grid grid-row-2 md:grid-cols-2  gap-5 sm:gap-10">
                             <div className="relative w-full h-[250px]">
-                                <Image src={"/affordable-housing/1.png"} fill sizes='width:100%,height:100%' className='object-cover rounded-md' alt='img' />
+                                <img src={"/affordable-housing/1.png"} sizes='width:100%,height:100%' className='object-cover rounded-md' alt='Image priority' />
                             </div>
                             <div className="w-full space-y-2">
                                 <h2 className="text-2xl font-bold text-blue-500">Architectural Design <span className='text-primary'>and Consultation</span></h2>
@@ -24,7 +25,7 @@ const ServicePage = () => {
                         </div>
                         <div className="w-full grid-row-2 grid md:grid-cols-2  gap-5 sm:gap-10">
                             <div className="relative w-full h-[250px]">
-                                <Image src={"/affordable-housing/2.png"} fill sizes='width:100%,height:100%' className='object-cover rounded-md' alt='img' />
+                                <img src={"/affordable-housing/2.png"} sizes='width:100%,height:100%' className='object-cover rounded-md' alt='Image priority' />
                             </div>
                             <div className="w-full space-y-2">
                                 <h2 className="text-2xl font-bold text-blue-500">Construction</h2>
@@ -33,16 +34,16 @@ const ServicePage = () => {
                         </div>
                         <div className="w-full grid-row-2 grid md:grid-cols-2  gap-5 sm:gap-10">
                             <div className="relative w-full h-[250px]">
-                                <Image src={"/affordable-housing/3.png"} fill sizes='width:100%,height:100%' className='object-cover rounded-md' alt='img' />
+                                <img src={"/affordable-housing/3.png"} sizes='width:100%,height:100%' className='object-cover rounded-md' alt='Image priority' />
                             </div>
                             <div className="w-full space-y-2">
                                 <h2 className="text-2xl font-bold text-blue-500">Real <span className="text-primary">Estate</span></h2>
-                                <p className="font-medium text-justify">We understand that finding the perfect property is just as important as the design and construction process. That’s why we offer comprehensive Real Estate services, managed by our sister company, <Link href={'#'} className='text-blue-600 hover:underline'>Modern Developers</Link>, a trusted name in the real estate industry. Together, we provide an integrated approach to meeting all your property needs, from acquisition to final construction.</p>
+                                <p className="font-medium text-justify">We understand that finding the perfect property is just as important as the design and construction process. That’s why we offer comprehensive Real Estate services, managed by our sister company, <Link href={'/modern-developers'} className='text-blue-600 hover:underline'>Modern Developers</Link>, a trusted name in the real estate industry. Together, we provide an integrated approach to meeting all your property needs, from acquisition to final construction.</p>
                             </div>
                         </div>
                         <div className="w-full grid-row-2 grid md:grid-cols-2  gap-5 sm:gap-10">
                             <div className="relative w-full h-[250px]">
-                                <Image src={"/affordable-housing/4.png"} fill sizes='width:100%,height:100%' className='object-cover rounded-md' alt='img' />
+                                <img src={"/affordable-housing/4.png"} sizes='width:100%,height:100%' className='object-cover rounded-md' alt='Image priority' />
                             </div>
                             <div className="w-full space-y-2">
                                 <h2 className="text-2xl font-bold text-blue-500">Design <span className="text-primary">and Build</span></h2>

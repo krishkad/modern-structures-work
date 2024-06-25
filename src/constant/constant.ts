@@ -127,7 +127,7 @@ export const projectContent = [
     },
     {
         path: 'burhani-masjid',
-        title: "BURHANI MASGID",
+        title: "BURHANI MASJID",
         content1: {
             img: "/BURHANI-MASJID/1.jpg",
             text: "Burhani Masjid, located on Bukasa Road on Muyenga Hill in the capital city of Uganda - Kampala, is the mosque of the Bohra community. It is situated a few kilometres away from the city center and has a great view of the Lake Victoria. The Masjid stands tall and proud on the hill and it evokes grandeur and splendor. This structure houses the mosque complex, offices, community kitchen, madrasa and residential complexes."
@@ -153,7 +153,7 @@ export const projectContent = [
     },
     {
         path: 'modern-heights',
-        title: "MORDERN HEIGHTS",
+        title: "MODERN HEIGHTS",
         content1: {
             img: "/affordable-housing/1.png",
             text: "Modern Heights is a proposed residential project, situated on Bukasa road on Muyenga hill in the capital city of Uganda - Kampala. Situated near the city center and the Lake Victoria, Modern Heights is a premium lake-view condominium apartment project focusing on providing the best of luxury and comfort. A total 24 units, of 2-Bedroom or 3-Bedroom with kitchen and attached bathrooms, are spread across 6 floors. The property was also built with rooftop amenities, children's play areas and dedicated rooms for support staff."
@@ -197,6 +197,32 @@ export const projectContent = [
                 path: "/PEARL-HOMES/DJI_0020-min.png",
             },
 
+        ]
+    },
+    {
+        path: 'modern-developers',
+        title: "MODERN DEVELOPERS",
+        content1: {
+            img: "/IMPALA-GARDENS/2.jpg",
+            text: "Situated on Gataka Road, near Osupoko Estate in Nairobi, the capital city of Kenya; Impala Gardens is a luxury residential project in a great neighbourhood with quick access to amenities and institutions such as schools, hospitals and supermarkets. With a total of 98 units, Impala Gardens offers both 3-bedroom and 4-bedroom choices."
+        },
+        content2: {
+            img: "/IMPALA-GARDENS/4.jpg",
+            text: "Welcome to Modern Structures, where we transform dreams into reality through innovative real estate development. With a steadfast commitment to excellence and a keen eye for detail, we craft spaces that not only meet but exceed expectations. Our portfolio spans residential, commercial, and mixed-use developments, each project meticulously designed to offer unmatched quality and lasting value."
+        },
+        imgs: [
+            {
+                path: "/affordable-housing/2.png"
+            },
+            {
+                path: "/affordable-housing/3.png"
+            },
+            {
+                path: "/affordable-housing/5.png"
+            },
+            {
+                path: "/affordable-housing/6.png"
+            },
         ]
     },
     {
@@ -267,6 +293,23 @@ export const imgesArray = [
                 path: "/affordable-housing/4.png",
             }
 
+        ]
+    },
+    {
+        path: 'modern-developers',
+        images: [
+            {
+                path: "/affordable-housing/2.png"
+            },
+            {
+                path: "/affordable-housing/3.png"
+            },
+            {
+                path: "/affordable-housing/5.png"
+            },
+            {
+                path: "/affordable-housing/6.png"
+            },
         ]
     },
     {

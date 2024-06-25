@@ -2,17 +2,18 @@
 import ImageDialog from '@/components/shared/image-dialog';
 import Navbar from '@/components/shared/navbar';
 import { projectContent } from '@/constant/constant';
-import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import React, { useState } from 'react'
 
-const ProjectPage = ({ params }: { params: { project: string } }) => {
+const ProjectPage = () => {
     const [imgPath, setImgPath] = useState('');
     const [dialogOpen, setDialogOpen] = useState(false);
 
     const onHandleChange = (path: string) => {
         setImgPath(path);
         setDialogOpen(true);
-    }
+    };
+    const pathname = usePathname();
     return (
         <div className='w-full'>
             <Navbar />
@@ -23,14 +24,14 @@ const ProjectPage = ({ params }: { params: { project: string } }) => {
                     return (
                         <div className="w-full" key={i}>
                             {
-                                project.path === params.project && <div className="max-w-wrapper">
+                                project.path === pathname.split('/')[1] && <div className="max-w-wrapper">
                                     <div className="w-full py-10" >
                                         <h1 className="text-center text-3xl font-bold text-blue-500">{project.title}</h1>
                                     </div>
                                     <div className="max-w-5xl mx-auto">
                                         {/* <div className="w-full h-64">
                                             <div className="relative w-full h-full sm:px-14">
-                                                <Image src={project.content1.img} priority width={370} height={270} sizes='height:100%,width:100%' className='w-full h-full aspect-video rounded-2xl cursor-pointer' alt='img' onClick={() => onHandleChange(project.content1.img)} />
+                                                <img src={project.content1.img} priority width={370} height={270} sizes='height:100%,width:100%' className='w-full h-full aspect-video rounded-2xl cursor-pointer' alt='img' onClick={() => onHandleChange(project.content1.img)} />
                                             </div>
                                         </div> */}
                                         <div className="w-full">
@@ -43,7 +44,7 @@ const ProjectPage = ({ params }: { params: { project: string } }) => {
                                         </div>
                                         {/* <div className="w-full h-64">
                                             <div className="relative w-full h-full sm:px-14">
-                                                <Image src={project.content2.img} priority width={370} height={270} sizes='height:100%,width:100%' className='w-full h-full aspect-video rounded-2xl cursor-pointer' alt='img' onClick={() => onHandleChange(project.content2.img)} />
+                                                <img src={project.content2.img} priority width={370} height={270} sizes='height:100%,width:100%' className='w-full h-full aspect-video rounded-2xl cursor-pointer' alt='img' onClick={() => onHandleChange(project.content2.img)} />
                                             </div>
                                         </div> */}
                                     </div>
@@ -52,7 +53,7 @@ const ProjectPage = ({ params }: { params: { project: string } }) => {
                                             {project.imgs.map((img: any, i: number) => {
                                                 return <div className="w-full h-72" key={i}>
                                                     <div className="relative w-full h-full">
-                                                        <Image src={img.path} priority width={370} height={270} sizes='height:100%,width:100%' className='w-full h-full  rounded-2xl cursor-pointer' alt='img' onClick={() => onHandleChange(img.path)}
+                                                        <img src={img.path} width={370} height={270} sizes='height:100%,width:100%' className='w-full h-full  rounded-2xl cursor-pointer' alt='img' onClick={() => onHandleChange(img.path)}
                                                         />
                                                     </div>
                                                 </div>
@@ -65,7 +66,7 @@ const ProjectPage = ({ params }: { params: { project: string } }) => {
                     )
                 })}
 
-                <ImageDialog imgPath={imgPath} dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} path={params.project} />
+                <ImageDialog imgPath={imgPath} dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} path={pathname} />
             </div>
         </div>
     )

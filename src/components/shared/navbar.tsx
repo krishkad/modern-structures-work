@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from 'react'
 import Logo from './logo'
-import { navLinks } from '@/constant/constant'
 import Link from 'next/link'
 import NavButton from './nav-button'
 import { Search } from 'lucide-react'
@@ -28,6 +27,28 @@ const Navbar = () => {
         },
 
     }
+    const navLinks = [
+        {
+            label: "HOME",
+            href: "/#home"
+        },
+        {
+            label: "ABOUT US",
+            href: "/#aboutus"
+        },
+        {
+            label: "PROJECTS",
+            href: "/#projects"
+        },
+        {
+            label: "SERVICES",
+            href: "/services"
+        },
+        {
+            label: "CONTACT",
+            href: "/#contact"
+        },
+    ];
 
     return (
         <div className='w-full sticky top-0 z-30 bg-white'>

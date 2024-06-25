@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 
 const About = () => {
@@ -28,19 +27,19 @@ const About = () => {
                             <div className="w-full md:w-1/2 lg:w-2/5">
                                 <div className="w-full grid grid-cols-2 gap-4 sm:p-5">
                                     <div className="relative w-full h-full aspect-square flex flex-col gap-4 items-center justify-center p-4 border shadow-lg rounded-lg">
-                                        <Image src={"/about/about-2.png"} width={120} height={120} alt='' />
+                                        <img src={"/about/about-2.png"} width={120} height={120} alt='' />
                                         <p className="font-bold text-center">Quality <br />Workmanship</p>
                                     </div>
                                     <div className="relative w-full h-full aspect-square flex flex-col gap-4 items-center justify-center p-4 border shadow-lg rounded-lg">
-                                        <Image src={"/about/about-3.png"} width={120} height={120} alt='' />
+                                        <img src={"/about/about-3.png"} width={120} height={120} alt='' />
                                         <p className="font-bold text-center">Innovative Design</p>
                                     </div>
                                     <div className="relative w-full h-full aspect-square flex flex-col gap-4 items-center justify-center p-4 border shadow-lg rounded-lg">
-                                        <Image src={"/about/about-4.png"} width={75} height={120} alt='' />
+                                        <img src={"/about/about-4.png"} width={75} height={120} alt='' />
                                         <p className="font-bold text-center">Value for <br />Money</p>
                                     </div>
                                     <div className="relative w-full h-full aspect-square flex flex-col gap-4 items-center justify-center p-4 border shadow-lg rounded-lg">
-                                        <Image src={"/about/about-1.png"} width={120} height={120} alt='' />
+                                        <img src={"/about/about-1.png"} width={120} height={120} alt='' />
                                         <p className="font-bold text-center">Client Centric <br />Approch</p>
                                     </div>
                                 </div>

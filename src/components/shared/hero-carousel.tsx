@@ -1,7 +1,6 @@
 "use client"
 import * as React from "react"
 
-import { Card, CardContent } from "@/components/ui/card"
 import {
     Carousel,
     CarouselContent,
@@ -9,7 +8,6 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import Image from "next/image"
 import { carouselImg } from "@/constant/constant"
 import Autoplay from 'embla-carousel-autoplay'
 
@@ -36,7 +34,7 @@ export function HeroCarousel() {
                         <CarouselItem key={index} className="pointer-events-none">
                             <div className="p-0 pointer-events-none">
                                 <div className="relative pointer-events-none bg-white w-full h-[calc(100svh-80px)]">
-                                    <Image src={item.img} width={500} height={500} className="w-full h-full object-fill pointer-events-none" priority sizes="(max-width: 768px) 100vw, 33vw" alt="img" />
+                                    <img src={item.img} width={500} height={500} className="w-full h-full object-cover md:object-fill pointer-events-none" sizes="(max-width: 768px) 100vw, 33vw" alt="img" />
                                 </div>
                             </div>
                         </CarouselItem>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from './logo'
-import Image from 'next/image'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -9,9 +9,15 @@ const Footer = () => {
                 <div className="w-full h-full flex items-center justify-between">
                     <Logo imgsrc='logo-dark.svg' />
                     <div className="size-full flex items-end justify-end gap-3">
-                        <Image src={'/facebook.svg'} width={30} height={30} alt='social' />
-                        <Image src={'/instagram.svg'} width={30} height={30} alt='social' />
-                        <Image src={'/linkedin.svg'} width={30} height={30} alt='social' />
+                        <Link href={'https://www.facebook.com/profile.php?id=61557396628009'} target='_blank'>
+                            <img src={'/facebook.svg'} width={30} height={30} alt='facebook-icon' />
+                        </Link>
+                        <Link href={'https://www.instagram.com/moderndevelopersug/'} target='_blank'>
+                            <img src={'/instagram.svg'} width={30} height={30} alt='instagram-icon' />
+                        </Link>
+                        <Link href={'https://www.threads.net/@moderndevelopersug'} target='_blank'>
+                            <img src={'/linkedin.svg'} width={30} height={30} alt='linkedin-icon' />
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -19,4 +25,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footer;

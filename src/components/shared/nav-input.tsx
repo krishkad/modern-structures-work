@@ -42,7 +42,7 @@ const NavInput = ({ isNav }: { isNav?: boolean }) => {
 
 
     useEffect(() => {
-        const sugg = projectContent.filter((project) => project.title.startsWith(search));
+        const sugg = projectContent.filter((project) => project.title.startsWith(search.toUpperCase()));
         setSuggestion(sugg);
         if (suggestion.length > 0) {
 
@@ -51,7 +51,7 @@ const NavInput = ({ isNav }: { isNav?: boolean }) => {
             setShowSuggestion(false);
 
         }
-    }, [search]);
+    }, [search, suggestion.length]);
 
 
 

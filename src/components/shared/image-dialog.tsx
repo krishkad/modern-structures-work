@@ -17,7 +17,6 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import { imgesArray } from '@/constant/constant'
-import Image from 'next/image'
 
 
 
@@ -28,15 +27,14 @@ const ImageDialog = ({ imgPath, dialogOpen, setDialogOpen, path }: { imgPath: st
 
     useEffect(() => {
         const list = imgesArray.map((element) => {
-            if (path === element.path) {
+            if (path.split('/')[1] === element.path) {
                 const newimglist = element.images.filter((e) => e.path !== imgPath);
                 setImgList(newimglist);
             }
         })
 
 
-    }, [imgPath])
-
+    }, [imgPath, path])
 
     return (
         <Dialog open={dialogOpen} onOpenChange={() => setDialogOpen(false)}>
@@ -46,7 +44,7 @@ const ImageDialog = ({ imgPath, dialogOpen, setDialogOpen, path }: { imgPath: st
                         <CarouselItem className="pointer-events-none size-full ">
                             <div className="size-full">
                                 <div className="relative size-full">
-                                    <Image src={imgPath} priority width={500} height={370} sizes='height:100%,width:100%' className='w-full h-full  rounded-2xl cursor-pointer aspect-video' alt='img'
+                                    <img src={`${imgPath}`} width={500} height={370} sizes='height:100%,width:100%' className='w-full h-full  rounded-2xl cursor-pointer aspect-video' alt='img'
                                     />
                                 </div>
                             </div>
@@ -57,7 +55,7 @@ const ImageDialog = ({ imgPath, dialogOpen, setDialogOpen, path }: { imgPath: st
                                     <CarouselItem className="pointer-events-none size-full ">
                                         <div className="size-full">
                                             <div className="relative size-full">
-                                                <Image src={element.path} priority width={500} height={370} sizes='height:100%,width:100%' className='w-full h-full  rounded-2xl cursor-pointer aspect-video' alt='img'
+                                                <img src={element.path} width={500} height={370} sizes='height:100%,width:100%' className='w-full h-full  rounded-2xl cursor-pointer aspect-video' alt='img'
                                                 />
                                             </div>
                                         </div>
