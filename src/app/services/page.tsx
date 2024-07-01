@@ -16,7 +16,7 @@ const ServicePage = () => {
                     <div className="max-w-wrapper md:max-w-5xl mx-auto space-y-12 pt-8 pb-12">
                         <div className="w-full grid grid-row-2 md:grid-cols-2  gap-5 sm:gap-10">
                             <div className="relative w-full h-[250px]">
-                                <img src={"/affordable-housing/1.png"} sizes='width:100%,height:100%' className='object-cover rounded-md' alt='Image priority' />
+                                <img src={"/affordable-housing/Bedroom_final.jpg"} sizes='width:100%,height:100%' className='object-cover rounded-md' alt='Image priority' />
                             </div>
                             <div className="w-full space-y-2">
                                 <h2 className="text-2xl font-bold text-blue-500">Architectural Design <span className='text-primary'>and Consultation</span></h2>
@@ -25,7 +25,7 @@ const ServicePage = () => {
                         </div>
                         <div className="w-full grid-row-2 grid md:grid-cols-2  gap-5 sm:gap-10">
                             <div className="relative w-full h-[250px]">
-                                <img src={"/affordable-housing/2.png"} sizes='width:100%,height:100%' className='object-cover rounded-md' alt='Image priority' />
+                                <img src={"/affordable-housing/Kyadondo_1BHK-fin01.jpg"} sizes='width:100%,height:100%' className='object-cover rounded-md' alt='Image priority' />
                             </div>
                             <div className="w-full space-y-2">
                                 <h2 className="text-2xl font-bold text-blue-500">Construction</h2>
@@ -34,7 +34,7 @@ const ServicePage = () => {
                         </div>
                         <div className="w-full grid-row-2 grid md:grid-cols-2  gap-5 sm:gap-10">
                             <div className="relative w-full h-[250px]">
-                                <img src={"/affordable-housing/3.png"} sizes='width:100%,height:100%' className='object-cover rounded-md' alt='Image priority' />
+                                <img src={"/affordable-housing/Kyadondo_2BHK-cam01_night_fin.jpg"} sizes='width:100%,height:100%' className='object-cover rounded-md' alt='Image priority' />
                             </div>
                             <div className="w-full space-y-2">
                                 <h2 className="text-2xl font-bold text-blue-500">Real <span className="text-primary">Estate</span></h2>
@@ -43,7 +43,7 @@ const ServicePage = () => {
                         </div>
                         <div className="w-full grid-row-2 grid md:grid-cols-2  gap-5 sm:gap-10">
                             <div className="relative w-full h-[250px]">
-                                <img src={"/affordable-housing/4.png"} sizes='width:100%,height:100%' className='object-cover rounded-md' alt='Image priority' />
+                                <img src={"/affordable-housing/Kyadondo_Studio-cam01.jpg"} sizes='width:100%,height:100%' className='object-cover rounded-md' alt='Image priority' />
                             </div>
                             <div className="w-full space-y-2">
                                 <h2 className="text-2xl font-bold text-blue-500">Design <span className="text-primary">and Build</span></h2>
