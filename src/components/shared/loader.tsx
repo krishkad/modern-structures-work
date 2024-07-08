@@ -8,7 +8,7 @@ const Loader = ({ load, setLoad }: { load: boolean, setLoad: (value: boolean) =>
   useEffect(() => {
     setTimeout(() => {
       setLoad(false)
-    }, 3);
+    }, 3000);
   }, [load])
 
   return (
