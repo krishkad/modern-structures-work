@@ -1,4 +1,5 @@
 "use client";
+import Footer from '@/components/shared/footer';
 import ImageDialog from '@/components/shared/image-dialog';
 import Navbar from '@/components/shared/navbar';
 import { projectContent } from '@/constant/constant';
@@ -67,6 +68,7 @@ const ProjectPage = () => {
 
                 <ImageDialog imgPath={imgPath} dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} path={pathname} />
             </div>
+            <Footer />
         </div>
     )
 }

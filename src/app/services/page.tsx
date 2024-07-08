@@ -1,4 +1,5 @@
 "use client";
+import Footer from '@/components/shared/footer';
 import Navbar from '@/components/shared/navbar'
 import Link from 'next/link'
 import React from 'react'
@@ -53,6 +54,7 @@ const ServicePage = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
