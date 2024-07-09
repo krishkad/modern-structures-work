@@ -13,9 +13,9 @@ import { useState } from "react";
 export default function Home() {
   const [load, setLoad] = useState(true);
   return (
-    <main className={cn("w-full scroll-smooth relative", load && "overflow-hidden h-screen")}>
+    <main className={cn("w-full scroll-smooth relative", load ?"overflow-hidden h-screen": "")}>
       <AnimatePresence>
-        {load && <Loader load={load} setLoad={setLoad} />}
+        {load ? <Loader load={load} setLoad={setLoad} /> : null}
       </AnimatePresence>
       <Navbar />
       <Hero />
