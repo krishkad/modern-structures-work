@@ -9,7 +9,7 @@ const Loader = ({ load, setLoad }: { load: boolean, setLoad: (value: boolean) =>
     setTimeout(() => {
       setLoad(false)
       localStorage.setItem('load', 'true');
-    }, 1500);
+    }, 3000);
   }, [load])
 
   return (
@@ -19,7 +19,7 @@ const Loader = ({ load, setLoad }: { load: boolean, setLoad: (value: boolean) =>
       exit={{ y: '-100%', transition: { duration: .5 } }}
       className="overflow-hidden w-screen h-[100dvh] absolute inset-0 bg-white z-50 flex items-center justify-center">
       {/* <img src="/intro-logo.gif" alt="intro" className="w-full" /> */}
-      <video src="/intro-video.mp4" muted autoPlay className='w-[400%] scale-[2] aspect-video lg:w-full' />
+      <video src="/intro-video.mp4" muted autoPlay className='w-[400%] max-lg:scale-[2] aspect-video lg:w-full' />
     </motion.div>
   )
 }
