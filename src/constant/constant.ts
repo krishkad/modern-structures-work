@@ -25,16 +25,16 @@ export const navLinks = [
 
 export const carouselImg = [
     {
-        img: "/affordable-housing/Bedroom_final.jpg",
+        img: "/affordable-housing/Bedroom_final.png",
     },
     {
-        img: "/affordable-housing/Kyadondo_1BHK-fin01.jpg",
+        img: "/affordable-housing/Kyadondo_1BHK-fin01.png",
     },
     {
-        img: "/affordable-housing/Kyadondo_2BHK-cam01_night_fin.jpg"
+        img: "/affordable-housing/Kyadondo_2BHK-cam01_night_fin.png"
     },
     {
-        img: "/affordable-housing/Kyadondo_Studio-cam01.jpg"
+        img: "/affordable-housing/Kyadondo_Studio-cam01.png"
     },
 
 ];
@@ -93,6 +93,20 @@ export const projectContent = [
             //     path: "/affordable-housing/bhk1.jpg"
             // },
 
+        ],
+        content: [
+            {
+                line: "fdafd",
+            },
+            {
+                line: "fdafd",
+            },
+            {
+                line: "fdafd",
+            },
+            {
+                line: "fdafd",
+            },
         ]
     },
     {
@@ -117,6 +131,26 @@ export const projectContent = [
                 path: "/IMPALA-DREAMS/8.jpg",
             },
 
+        ],
+        content: [
+            {
+                line: "Location – Nairobi, Kenya",
+            },
+            {
+                line: "Plot Size – 0.5 acres",
+            },
+            {
+                line: "Category - Residential",
+            },
+            {
+                line: "Total Constructed Area – 1,700 sq.m",
+            },
+            {
+                line: "Project Scope – Design & Consultation",
+            },
+            {
+                line: "No. of Units – 7 nos",
+            }
         ]
     },
     {
@@ -143,6 +177,23 @@ export const projectContent = [
             {
                 path: "/BURHANI-MASJID/ROD_6900.jpg",
             },
+        ],
+        content: [
+            {
+                line: "Location – Muyenga, Kampala, Uganda",
+            },
+            {
+                line: "Plot Size – 1.5 acres",
+            },
+            {
+                line: "Category - Institutional",
+            },
+            {
+                line: "Total Constructed Area – 4,500 sq.m.",
+            },
+            {
+                line: "Project Scope - Construction",
+            },
         ]
     },
     {
@@ -164,6 +215,26 @@ export const projectContent = [
                 path: "/MODERN-HEIGHTS/KAMPALA-cam-4-final.jpg",
             },
 
+        ],
+        content: [
+            {
+                line: "Location – Bukasa, Kampala",
+            },
+            {
+                line: "Plot Size – 0.3 acres",
+            },
+            {
+                line: "Category - Residential",
+            },
+            {
+                line: "Total Constructed Area –4,000 sq.m.",
+            },
+            {
+                line: "Project Scope – Design & Construction",
+            },
+            {
+                line: "No. of Units – 24 units",
+            },
         ]
     },
     {
@@ -188,6 +259,26 @@ export const projectContent = [
             //     path: "/PEARL-HOMES/DJI_0020-min.png",
             // },
 
+        ],
+        content: [
+            {
+                line: "Location – Lugalla, Kampala, Uganda",
+            },
+            {
+                line: "Plot Size – 0.25 acres",
+            },
+            {
+                line: "Category - Residential",
+            },
+            {
+                line: "Total Constructed Area – 1,300 sq.m.",
+            },
+            {
+                line: "Project Scope – Design & Construction",
+            },
+            {
+                line: "No. of Units – 11nos",
+            },
         ]
     },
     {
@@ -213,6 +304,26 @@ export const projectContent = [
             },
             {
                 path: "/affordable-housing/Kyadondo_Studio-cam01.jpg"
+            },
+        ],
+        content: [
+            {
+                line: "Location – Kampala, Uganda",
+            },
+            {
+                line: "Plot Size – 2.0 acres",
+            },
+            {
+                line: "Category - Residential",
+            },
+            {
+                line: "Total Constructed Area – 8,500 sq.m.",
+            },
+            {
+                line: "Project Scope – Design & Consultation",
+            },
+            {
+                line: "No. of Units – 164 units",
             },
         ]
     },
@@ -252,6 +363,26 @@ export const projectContent = [
             // {
             //     path: "/IMPALA-GARDENS/ImpalaDreamsGatakaDrone17thsept3.jpg",
             // },
+        ],
+        content: [
+            {
+                line: "Location – Nairobi, Kenya",
+            },
+            {
+                line: "Plot Size – 5 acres",
+            },
+            {
+                line: "Category - Residential",
+            },
+            {
+                line: "Total Constructed Area – 16,000 sq.m.",
+            },
+            {
+                line: "Project Scope – Design & Consultation",
+            },
+            {
+                line: "No. of Units – 98 units of Row Houses",
+            },
         ]
     },
 ]

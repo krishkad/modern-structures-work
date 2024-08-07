@@ -18,8 +18,7 @@ const Loader = ({ load, setLoad }: { load: boolean, setLoad: (value: boolean) =>
       animate={!load ? { y: '-100%', transition: { duration: .5 } } : {}}
       exit={{ y: '-100%', transition: { duration: .5 } }}
       className="overflow-hidden w-screen h-[100dvh] absolute inset-0 bg-white z-50 flex items-center justify-center">
-      {/* <img src="/intro-logo.gif" alt="intro" className="w-full" /> */}
-      <video src="/intro-video.mp4" muted autoPlay className='w-[400%] max-lg:scale-[2] aspect-video lg:w-full' />
+      <video src="/LOGO.mp4" muted autoPlay className='w-[80%] aspect-video lg:w-[60%]' />
     </motion.div>
   )
 }
