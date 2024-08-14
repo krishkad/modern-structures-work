@@ -8,6 +8,7 @@ import MobNavbar from './mob-navbar'
 import { Input } from '../ui/input'
 import { motion, AnimatePresence } from "framer-motion"
 import NavInput from './nav-input'
+import { navLinks } from '@/constant/constant'
 
 const Navbar = () => {
     const [showInput, setShowInput] = useState(false);
@@ -27,28 +28,7 @@ const Navbar = () => {
         },
 
     }
-    const navLinks = [
-        {
-            label: "HOME",
-            href: "/#home"
-        },
-        {
-            label: "ABOUT US",
-            href: "/#aboutus"
-        },
-        {
-            label: "PROJECTS",
-            href: "/#projects"
-        },
-        {
-            label: "SERVICES",
-            href: "/services"
-        },
-        {
-            label: "CONTACT",
-            href: "/#contact"
-        },
-    ];
+
 
     return (
         <div className='w-full sticky top-0 z-30 bg-white'>

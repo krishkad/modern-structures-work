@@ -21,6 +21,10 @@ export const navLinks = [
         label: "CONTACT",
         href: "/#contact"
     },
+    {
+        label: "MODERN DEVELOPERS",
+        href: "/modern-developers"
+    },
 ];
 
 export const carouselImg = [

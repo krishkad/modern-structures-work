@@ -8,33 +8,13 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet"
 import Link from "next/link"
-import { AlignRight, Building, Contact, FolderKanban, Home as HomeIcon, User } from 'lucide-react';
+import { AlignRight, Building, Building2, Contact, FolderKanban, Home as HomeIcon, User } from 'lucide-react';
 import Logo from "./logo";
 import NavInput from "./nav-input";
+import { navLinks } from "@/constant/constant";
 
 export default function MobNavbar() {
-    const navLinks = [
-        {
-            label: "HOME",
-            href: "/#home"
-        },
-        {
-            label: "ABOUT US",
-            href: "/#aboutus"
-        },
-        {
-            label: "PROJECTS",
-            href: "/#projects"
-        },
-        {
-            label: "SERVICES",
-            href: "/services"
-        },
-        {
-            label: "CONTACT",
-            href: "/#contact"
-        },
-    ];
+
     return (
         <Sheet>
             <SheetTrigger asChild>
@@ -52,7 +32,7 @@ export default function MobNavbar() {
                         return (
                             <SheetClose asChild key={i}>
                                 <Link href={item.href} className="w-full font-semibold flex items-center gap-4">
-                                    {item.label === 'HOME' ? <HomeIcon className="w-[20px] h-[20px]" /> : item.label === 'ABOUT US' ? <User className="w-[20px] h-[20px]" /> : item.label === 'PROJECTS' ? <FolderKanban className="w-[20px] h-[20px]" /> : item.label === 'SERVICES' ? <Building className="w-[20px] h-[20px]" /> : item.label === 'CONTACT' ? <Contact className="w-[20px] h-[20px]" /> : 'none'}
+                                    {item.label === 'HOME' ? <HomeIcon className="w-[20px] h-[20px]" /> : item.label === 'ABOUT US' ? <User className="w-[20px] h-[20px]" /> : item.label === 'PROJECTS' ? <FolderKanban className="w-[20px] h-[20px]" /> : item.label === 'SERVICES' ? <Building className="w-[20px] h-[20px]" /> : item.label === 'CONTACT' ? <Contact className="w-[20px] h-[20px]" /> : 'MODERN DEVELOPERS' === item.label ? <Building2 className="w-[20px] h-[20px]" /> : 'none'}
                                     {item.label}
                                 </Link>
                             </SheetClose>
