@@ -16,7 +16,7 @@ const Projects = () => {
                         <div className="w-full sm:w-3/4 grid grid-cols-2 sm:grid-cols-3 gap-4  p-2">
                             <Link href={'/modern-heights'}>
                                 <div className="w-full h-40 relative group">
-                                    <img src={'/MODERN-HEIGHTS/KAMPALA-cam-3-final.jpg'} width={500} height={500} className="w-full h-full object-fill" sizes="(max-width: 768px) 100vw, 33vw" alt='img' />
+                                    <img src={'/MODERN-HEIGHTS/KAMPALA-cam-3-final.jpg'} width={500} height={500} className="w-full h-full object-cover" sizes="(max-width: 768px) 100vw, 33vw" alt='img' />
                                     <div className="absolute transition-all duration-500 opacity-0 group-hover:opacity-100 bg-blue-400/80 size-full inset-0 flex flex-col justify-center items-center gap-2 cursor-pointer">
                                         <p className="text-md text-white">MODERN HEIGHTS</p>
                                         <Search className='text-white w-5 h-5' />
@@ -26,7 +26,7 @@ const Projects = () => {
                             </Link>
                             <Link href={'/impala-gardens'}>
                                 <div className="w-full h-40 relative group">
-                                    <img src={'/IMPALA-GARDENS/Impala-Dreams-Gataka-Drone-17th-sept1.jpg'} width={500} height={500} className="w-full h-full object-fill" sizes="(max-width: 768px) 100vw, 33vw" alt='img' />
+                                    <img src={'/IMPALA-GARDENS/Impala-Dreams-Gataka-Drone-17th-sept1.jpg'} width={500} height={500} className="w-full h-full object-cover" sizes="(max-width: 768px) 100vw, 33vw" alt='img' />
                                     <div className="absolute transition-all duration-500 opacity-0 group-hover:opacity-100 bg-blue-400/80 size-full inset-0 flex flex-col justify-center items-center gap-2 cursor-pointer">
                                         <p className="text-md text-white">IMPALA GARDENS</p>
                                         <Search className='text-white w-5 h-5' />
@@ -36,7 +36,7 @@ const Projects = () => {
                             </Link>
                             <Link href={'/burhani-masjid'}>
                                 <div className="w-full h-40 relative group">
-                                    <img src={'/BURHANI-MASJID/masjid-edited.jpg'} width={500} height={500} className="w-full h-full object-fill" sizes="(max-width: 768px) 100vw, 33vw" alt='img' />
+                                    <img src={'/BURHANI-MASJID/masjid-edited.jpg'} width={500} height={500} className="w-full h-full object-cover" sizes="(max-width: 768px) 100vw, 33vw" alt='img' />
                                     <div className="absolute transition-all duration-500 opacity-0 group-hover:opacity-100 bg-blue-400/80 size-full inset-0 flex flex-col justify-center items-center gap-2 cursor-pointer">
                                         <p className="text-md text-white">BURHANI MASJID</p>
                                         <Search className='text-white w-5 h-5' />
@@ -46,7 +46,7 @@ const Projects = () => {
                             </Link>
                             <Link href={'/affordable-housing'}>
                                 <div className="w-full h-40 relative group bg-black">
-                                    <img src={'/affordable-housing/Kyadondo_2BHK-cam01_night_fin.jpg'} width={500} height={500} className="w-full h-full object-fill" sizes="(max-width: 768px) 100vw, 33vw" alt='img' />
+                                    <img src={'/affordable-housing/Kyadondo_2BHK-cam01_night_fin.jpg'} width={500} height={500} className="w-full h-full object-cover" sizes="(max-width: 768px) 100vw, 33vw" alt='img' />
                                     <div className="absolute transition-all duration-500 opacity-0 group-hover:opacity-100 bg-blue-400/80 size-full inset-0 flex flex-col justify-center items-center gap-2 cursor-pointer">
                                         <p className="text-md text-white text-center">AFFORDABLE HOUSING</p>
                                         <Search className='text-white w-5 h-5' />
@@ -56,7 +56,7 @@ const Projects = () => {
                             </Link>
                             <Link href={'/pearl-homes'}>
                                 <div className="w-full h-40 relative group">
-                                    <img src={'/PEARL-HOMES/PRL-56.jpg'} width={500} height={500} className="w-full h-full object-fill" sizes="(max-width: 768px) 100vw, 33vw" alt='img' />
+                                    <img src={'/PEARL-HOMES/PRL-56.jpg'} width={500} height={500} className="w-full h-full object-cover" sizes="(max-width: 768px) 100vw, 33vw" alt='img' />
                                     <div className="absolute transition-all duration-500 opacity-0 group-hover:opacity-100 bg-blue-400/80 size-full inset-0 flex flex-col justify-center items-center gap-2 cursor-pointer">
                                         <p className="text-md text-white">PEARL HOMES</p>
                                         <Search className='text-white w-5 h-5' />
@@ -66,7 +66,7 @@ const Projects = () => {
                             </Link>
                             <Link href={'/impala-dreams'}>
                                 <div className="w-full h-40 relative group">
-                                    <img src={'/IMPALA-DREAMS/final-1-ps.jpg'} width={500} height={500} className="w-full h-full object-fill" sizes="(max-width: 768px) 100vw, 33vw" alt='img' />
+                                    <img src={'/IMPALA-DREAMS/final-1-ps.jpg'} width={500} height={500} className="w-full h-full object-cover" sizes="(max-width: 768px) 100vw, 33vw" alt='img' />
                                     <div className="absolute transition-all duration-500 opacity-0 group-hover:opacity-100 bg-blue-400/80 size-full inset-0 flex flex-col justify-center items-center gap-2 cursor-pointer">
                                         <p className="text-md text-white">IMPALA DREAMS</p>
                                         <Search className='text-white w-5 h-5' />
