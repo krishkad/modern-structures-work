@@ -18,7 +18,7 @@ const ProjectPage = () => {
     return (
         <div className='w-full'>
             <Navbar />
-            <div className="w-full">
+            <div className="w-full min-h-[calc(100vh-80px)]">
 
                 {projectContent.map((project: any, i: number) => {
 
@@ -29,18 +29,18 @@ const ProjectPage = () => {
                                     <div className="w-full py-10" >
                                         <h1 className="text-center text-3xl font-bold text-blue-500">Modern Developers</h1>
                                     </div>
-                                    {/* <div className="max-w-5xl mx-auto">
+                                    <div className="max-w-5xl mx-auto">
                                     </div>
                                     <div className="max-w-5xl mx-auto">
                                         <div className="w-full max-sm:order-last">
                                             <p className=" text-justify font-medium">{project.content2.text}</p>
                                         </div>
-                                    </div> */}
-                                    <div className="max-w-5xl space-y-2">
+                                    </div>
+                                    {/* <div className="max-w-5xl space-y-2">
                                         {project.content.map((line: { line: string }, i: number) => {
                                             return <p className="text-sm font-semibold" key={i}>{line.line}</p>
                                         })}
-                                    </div>
+                                    </div> */}
                                     <div className="w-full my-10">
                                         <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-8">
                                             {project.imgs.map((img: any, i: number) => {

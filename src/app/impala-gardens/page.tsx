@@ -18,8 +18,7 @@ const ProjectPage = () => {
     return (
         <div className='w-full'>
             <Navbar />
-            <div className="w-full">
-
+            <div className="w-full min-h-[calc(100vh-80px)]">
                 {projectContent.map((project: any, i: number) => {
 
                     return (

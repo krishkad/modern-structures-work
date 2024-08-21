@@ -1,11 +1,80 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Input } from '../ui/input'
 import { Textarea } from '../ui/textarea'
 import { Button } from '../ui/button'
 import { Clock, Mail, MapPin, Phone } from 'lucide-react'
 import { PiPhoneDisconnectFill } from "react-icons/pi";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+    const [contact, setContact] = useState({
+        from_name: '',
+        message: '',
+        from_email: '',
+        from_phoneno: ''
+    })
+
+    // template-id: template_bsxvuo1
+    // service-id:  service_mn25v0e
+
+
+
+    const handleChange = (e: any) => {
+        const { name, value } = e.target;
+        setContact({ ...contact, [name]: value });
+    };
+
+    const handleSubmit = (e: any) => {
+        e.preventDefault();
+
+
+
+        const serviceID = 'service_mn25v0e';
+        const templateID = 'template_bsxvuo1';
+        const userID = 'YOUR_USER_ID';
+        const options = {
+            publicKey: 'EaBkTtN2lwZMQcMzr',
+            // Do not allow headless browsers
+            blockHeadless: true
+        }
+
+        emailjs.init({
+            publicKey: 'EaBkTtN2lwZMQcMzr',
+            // Do not allow headless browsers
+            blockHeadless: true,
+            blockList: {
+                // Block the suspended emails
+                list: ['foo@emailjs.com', 'bar@emailjs.com'],
+                // The variable contains the email address
+                watchVariable: 'userEmail',
+            },
+            limitRate: {
+                // Set the limit rate for the application
+                id: 'app',
+                // Allow 1 request per 10s
+                throttle: 10000,
+            },
+        });
+
+
+        emailjs.send(serviceID, templateID, contact)
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Your message has been sent successfully!');
+            }, (error) => {
+                console.log('FAILED...', error);
+                alert('There was an error sending your message. Please try again.');
+            });
+
+        // Reset form fields
+        setContact({
+            from_name: '',
+            from_email: '',
+            message: '',
+            from_phoneno: ''
+        });
+    };
     return (
         <div className='w-full' id='contact'>
             <div className="max-w-wrapper max-w-5xl mx-auto py-24">
@@ -18,16 +87,16 @@ const Contact = () => {
                             FILL THE CONTACT FORM
                         </h3>
                         <div className="w-full flex flex-col max-sm:items-center gap-4 pt-6">
-                            <Input className='max-w-[420px]' placeholder='Enter Name' />
-                            <Input className='max-w-[420px]' placeholder='Enter E-mail' />
-                            <Input className='max-w-[420px]' placeholder='Enter Phone No.' />
-                            <Textarea className='max-w-[420px] h-40' placeholder='Enter Message' />
-                            <Button className='w-full max-w-[420px] bg-zinc-700 hover:bg-zinc-800'>Submit</Button>
+                            <Input className='max-w-[420px]' name='from_name' value={contact.from_name} placeholder='Enter Name' onChange={handleChange} />
+                            <Input className='max-w-[420px]' name='from_email' value={contact.from_email} placeholder='Enter E-mail' onChange={handleChange} />
+                            <Input className='max-w-[420px]' name='from_phoneno' value={contact.from_phoneno} placeholder='Enter Phone No.' onChange={handleChange} />
+                            <Textarea className='max-w-[420px] h-40' name='message' value={contact.message} placeholder='Enter Message' onChange={handleChange} />
+                            <Button onClick={handleSubmit} className='w-full max-w-[420px] bg-zinc-700 hover:bg-zinc-800'>Submit</Button>
                         </div>
                     </div>
                     <div className="w-full sm:w-1/2">
                         <h3 className="text-md font-bold underline underline-offset-4 decoration-blue-500 ">
-                            HEADQUARTERS
+                            OFFICE
                         </h3>
                         <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-10 pt-6">
                             <div className="w-full flex gap-2">
@@ -97,4 +166,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Contact;
