@@ -23,7 +23,7 @@ export default function MobNavbar() {
             <SheetContent onOpenAutoFocus={(e) => e.preventDefault()}>
                 <SheetHeader>
                     <SheetTitle>
-                        <Logo imgsrc="logo.png" />
+                        <Logo imgsrc="logo-navbar.png" />
                     </SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col gap-5 py-4 my-5">

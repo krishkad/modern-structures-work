@@ -4,7 +4,7 @@ import ImageDialog from '@/components/shared/image-dialog';
 import Navbar from '@/components/shared/navbar';
 import { projectContent } from '@/constant/constant';
 import { usePathname } from 'next/navigation';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 const ProjectPage = () => {
     const [imgPath, setImgPath] = useState('');
@@ -44,7 +44,7 @@ const ProjectPage = () => {
                                             {project.imgs.map((img: any, i: number) => {
                                                 return <div className="w-full h-72" key={i}>
                                                     <div className="relative w-full h-full">
-                                                        <img src={img.path} width={370} height={270} sizes='height:100%,width:100%' className='w-full h-full  rounded-2xl cursor-pointer' alt='img' onClick={() => onHandleChange(img.path)}
+                                                        <img src={img.path} width={370} height={270} sizes='height:100%,width:100%' className='w-full h-full  rounded-2xl cursor-pointer object-cover' alt='img' onClick={() => onHandleChange(img.path)}
                                                         />
                                                     </div>
                                                 </div>
