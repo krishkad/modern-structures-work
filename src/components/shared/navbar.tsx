@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className='w-full sticky top-0 z-30 bg-white'>
             <div className="px-2 sm:px-8 h-20 flex items-center">
                 <div className="w-full flex justify-between items-center">
-                    <Logo imgsrc='logo-navbar.png' />
+                    <Logo imgsrc='logo-navbar.png' navLogo='modern-developers-logo.jpg' />
                     <div className="hidden sm:flex items-center gap-6">
                         <AnimatePresence>
                             {showInput && (

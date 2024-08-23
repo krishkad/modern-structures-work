@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='w-full bg-zinc-800 h-32'>
             <div className="px-2 sm:px-8 w-full h-full pb-4">
                 <div className="w-full h-full flex items-center justify-between">
-                    <Logo imgsrc='logo.png' className='w-[340px]' />
+                    <Logo imgsrc='logo.png' className='w-[340px]' navLogo='modern-developers-dark-logo.png' />
                     <div className="size-full flex items-end justify-end gap-5">
                         <Link href={'https://www.facebook.com/profile.php?id=61557396628009'} target='_blank'>
                             <img src={'/facebook-brands-solid.svg'} className='invert' width={25} height={25} alt='facebook-icon' />
